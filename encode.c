@@ -10,7 +10,7 @@
 
 ssize_t find_offset(FILE* file){
     char sym;
-    char find_sym = 0xff;
+    char find_sym = (char)0xff;
     int offset = 0, k = 0;
     
     while(offset < BOOT_SIZE){
